@@ -1,0 +1,140 @@
+.main {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    font-family: verdana;
+}
+
+.titulo {
+    font-size: 15px;
+    text-align: center;
+    padding: 5px 15px;
+    background-color: rgb(116, 108, 108);
+    border-bottom: 2px solid #e70707;
+    border-radius: 50px 25px;
+    color: white;
+    width: 180px;
+}
+.titulo small {
+    font-style: italic;
+}
+.titulo2 {
+    background-color: #e70707;
+}
+
+
+.secao_sobreMim {
+    width: 100%;
+    max-width: 1024px;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    padding: 15px;
+}
+
+
+.yin_yang {
+    width: 40%;
+    font-size: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+}
+
+.texto {
+        width: 60%;
+        font-size: 18px;
+        padding: 5px;
+        text-align: justify;
+}
+
+/* área do CV */
+.container_cv {
+    padding: 16px;
+    display: flex;
+    justify-content: center;
+}
+.container_cv a {
+    text-decoration: none;
+}
+.container_cv button {
+    padding: 10px 10px;
+    background-color: #d60707;
+    border-radius: 5px;
+    font-size: 20px;
+    border: none;
+    color: white;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    outline: 0;
+}
+.container_cv span {
+    font-size: 25px;
+
+}
+
+/* hover do botão "download" */
+.container_cv button:hover {
+    opacity: 80%;
+}
+
+.botao_verde {
+    background-color: green !important;
+}
+
+.botao_verde span {
+    animation: botao 1s 1;
+}
+@keyframes botao { /* icone biscando */
+    
+    0% {
+        opacity: 1;
+      }
+      50% {
+        opacity: 0.5;
+      }
+      100% {
+        opacity: 1;
+      }
+    }
+
+    /* ///// MEDIA QUERIES ///// */
+
+@media (max-width: 767px) { /* smartphone */
+    .secao_sobreMim {
+        flex-direction: column;
+    }
+    .yin_yang {
+        font-size: 50px;
+    }.texto {
+        width: 100%;
+        font-size: 16px;
+        padding: 0;
+    }
+    .container_cv button {
+        font-size: 16px;
+        padding: 5px 5px;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 1000px) { /* tablet */
+    .texto {
+        font-size: 15px;
+        width: 70%;
+    }
+    .yin_yang {
+        width: 30%;
+    }
+}
+
+@media (min-width: 1001px)  { /* desktop */
+    .texto {
+        font-size: 17px;
+    }
+}

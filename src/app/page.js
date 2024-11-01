@@ -1,95 +1,112 @@
-import Image from "next/image";
-import styles from "./page.module.css";
+'use client';
+import { useState } from "react"; // módulo state
+import estilos from "./page.module.css"; // estilos
+// componentes e pages
+import Topo from "@/componentes/Topo";
+import Projetos from "@/componentes/Projetos";
+import SobreMim from "./sobreMim/page";
+import Habilidades from "./habilidades/page";
+// imagens do projeto
+import pro1 from '@/../public/projetos/projeto1.png';
+import pro2 from '@/../public/projetos/projeto2.png';
+import pro3 from '@/../public/projetos/projeto3.png';
+import pro4 from '@/../public/projetos/projeto4.png';
+import pro5 from '@/../public/projetos/projeto5.png';
+import pro6 from '@/../public/projetos/projeto6.png';
+import pro7 from '@/../public/projetos/projeto7.png';
+import Link from "next/link";
+
 
 export default function Home() {
-  return (
-    <div className={styles.page}>
-      <main className={styles.main}>
-        <Image
-          className={styles.logo}
-          src="/next.svg"
-          alt="Next.js logo"
-          width={180}
-          height={38}
-          priority
-        />
-        <ol>
-          <li>
-            Get started by editing <code>src/app/page.js</code>.
-          </li>
-          <li>Save and see your changes instantly.</li>
-        </ol>
 
-        <div className={styles.ctas}>
-          <a
-            className={styles.primary}
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <Image
-              className={styles.logo}
-              src="/vercel.svg"
-              alt="Vercel logomark"
-              width={20}
-              height={20}
-            />
-            Deploy now
-          </a>
-          <a
-            href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-            className={styles.secondary}
-          >
-            Read our docs
-          </a>
-        </div>
-      </main>
-      <footer className={styles.footer}>
-        <a
-          href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/file.svg"
-            alt="File icon"
-            width={16}
-            height={16}
+// variavél de estado
+const [clicado, setClicado] = useState(false);
+
+  return (
+    <div className={estilos.container_mae} id='topo'>
+    <main className={estilos.main}>
+      <section className={estilos.secao_topo} id='lucas'>
+      <Topo />
+      </section>
+
+      <section className={estilos.secao_projetos} id='projetos'>
+        
+     {/* projeto 1 */}
+            <Projetos
+            nome={'PÁGINA WEB - FORMULÁRIO'}
+            link_projeto={'https://formulario-agencia-viagens.vercel.app/'}
+            imagem={pro1}
+            github={'https://github.com/lucas-devworks/FORMULARIO-AGENCIA-VIAGENS.git'}
           />
-          Learn
-        </a>
-        <a
-          href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/window.svg"
-            alt="Window icon"
-            width={16}
-            height={16}
+
+          {/* projeto 2 */}
+          <Projetos
+            nome={'PROJETO - SORTEADOR NUMÉRICO'}
+            link_projeto={'https://sorteador-numerico-editavel.vercel.app/'}
+            imagem={pro2}
+            github={'https://github.com/lucas-devworks/SORTEADOR_NUMERICO_EDITAVEL.git'}
           />
-          Examples
-        </a>
-        <a
-          href="https://nextjs.org?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/globe.svg"
-            alt="Globe icon"
-            width={16}
-            height={16}
+
+          {/* projeto 3 */}
+          <Projetos
+            nome={'PROJETO - SORTEADOR DE NOMES'}
+            link_projeto={'https://projeto-sorteio-nomes.vercel.app/'}
+            imagem={pro3}
+            github={'https://github.com/lucas-devworks/PROJETO_SORTEIO_NOMES.git'}
           />
-          Go to nextjs.org →
-        </a>
+
+     {/* projeto 4 */}
+     <Projetos
+            nome={'PÁGINA WEB - ÓTICAS VIDA'}
+            link_projeto={'https://website-otica.vercel.app/'}
+            imagem={pro4}
+            github={'https://github.com/lucas-devworks/website-otica.git'}
+          />
+
+          {/* projeto 5 */}
+          <Projetos
+            nome={'PÁGINA WEB - SORVETERIA'}
+            link_projeto={'https://sorveteria-web.vercel.app/'}
+            imagem={pro5}
+            github={'https://github.com/lucas-devworks/pagina-sorveteria.git'}
+          />
+
+          {/* projeto 6 */}
+          <Projetos
+            nome={'PÁGINA WEB - DARKMODE'}
+            link_projeto={'https://web-dark-topaz.vercel.app/'}
+            imagem={pro6}
+            github={'https://github.com/lucas-devworks/web-dark-page.git'}
+          />
+
+          {/* projeto 7 */}
+          <Projetos
+            nome={'PROJETO - CARDÁPIO DINÂMICO'}
+            link_projeto={'https://cardapioreact.vercel.app/'}
+            imagem={pro7}
+            github={'https://github.com/lucas-devworks/cardapio_dinamico.git'}
+          />
+
+      </section>
+    </main>
+
+      {/* sobre mim */}
+      <section className={estilos.sobre_mim} id='sobre_mim'>
+        <SobreMim 
+          clicado={clicado} 
+          setClicado={setClicado}
+        />
+      </section>
+
+        {/* habilidades */}
+        <section className={estilos.tecnologias} id='habilidades'>
+            <Habilidades />
+        </section>
+
+        {/* rodapé */}
+      <footer className={estilos.rodape}>
+        <p>Copyright © 2024 <br/> <Link href='#lucas'>Lucas Teixeira Santos</Link></p>
       </footer>
-    </div>
-  );
-}
+  </div>
+  )
+};

@@ -1,0 +1,73 @@
+/* card projetos */
+.cards {
+    max-width: 300px;
+    width: 100%;
+    height: 200px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    box-shadow: 3px 3px 10px rgb(105, 104, 104);
+    border-radius: 16px 0 0 0;
+}
+.cards figure {
+    width: 100%;
+    height: 90%;
+}
+.cards figcaption { /*título card*/
+    padding: 6px;
+    font-weight: bold;
+    background-color: rgb(226, 226, 226);
+    border-radius: 16px 0 0 0;
+    border-left: solid 2px red;
+    font-size: 16px;
+}
+.cards img {
+    width: 100%;
+    height: 90%;
+}
+/* hover card */
+.cards img:hover {
+    opacity: 70%;
+}
+
+.visualizador {
+    margin-top: 6px;
+    width: 100%;
+    background-color: rgb(226, 226, 226);
+    font-size: 16px;
+    display: flex;
+    z-index: 1;
+}
+.olho, .git, .olho {
+    width: 50%;
+    display: flex;
+    flex-direction: row;
+    align-items: end;
+    justify-content: center;
+    border-bottom: solid 3px silver;
+}
+.visualizador a {
+    text-decoration: none;
+    color: black;
+}
+
+.olho div, .git div {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+} 
+.git:hover, .olho:hover {
+    border-bottom: 3px solid red;
+}
+
+
+/* ///// MEDIA QUERIES ///// */
+
+@media (max-width: 669px) { /* smartphone */
+    .cards {
+        max-width: 90%;
+        height: auto;
+    }
+} 
