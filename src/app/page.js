@@ -11,9 +11,9 @@ import Link from "next/link";
 
 export default function Home() {
 // imagens
-const pro1 = "/projetos/projeto1.png";
-const pro2 = "/projetos/projeto2.png";
-const pro3 = "/projetos/projeto3.png";
+const pro1 = "/projetos/pro1.png";
+const pro2 = "/projetos/pro2.png";
+const pro3 = "/projetos/pro3.png";
 const pro4 = "/projetos/projeto4.png";
 const pro5 = "/projetos/projeto5.png";
 const pro6 = "/projetos/projeto6.png";
