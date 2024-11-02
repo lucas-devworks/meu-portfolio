@@ -8,8 +8,7 @@
     display: flex;
     align-items: center;
     justify-content: start;
-    flex-direction: column;
-    background-color: aqua;
+    flex-direction: column
 }
 
 .main section {

@@ -9,6 +9,13 @@ export default function Topo() {
     return (
         <header className={estilos.topo}>
             <div className={estilos.container}> 
+                
+                <div className={estilos.box_link}>
+                    <Link  href="https://www.linkedin.com/in/lucas-teixeira-santos-br/" target='_blank' title='LinkedIn'><FaLinkedin /></Link>
+                    <Link  href="https://github.com/lucas-devworks" target='_blank' title='GitHub'><FaGithub /></Link>
+                    <Link  href="mailto:lucasteixeirasantos74@gmail.com" target='_blank' title='E-mail'><MdEmail /></Link>
+                </div>
+
                 {/* Foto de perfil */}
                 <div className={estilos.foto_perfil}>
                     <p></p>
@@ -21,16 +28,11 @@ export default function Topo() {
             </div>
             {/* links */}
             <nav className={estilos.links_container}>
-                <div className={estilos.box_link}>
-                    <Link  href="https://www.linkedin.com/in/lucas-teixeira-santos-br/" target='_blank' title='LinkedIn'><FaLinkedin /></Link>
-                    <Link  href="https://github.com/lucas-devworks" target='_blank' title='GitHub'><FaGithub /></Link>
-                    <Link  href="mailto:lucasteixeirasantos74@gmail.com" target='_blank' title='E-mail'><MdEmail /></Link>
-                </div>
+
                 <div className={estilos.botao}>
                     <Link href='#projetos'>Projetos</Link>
                     <Link href='#sobre_mim'>Sobre mim</Link>
                     <Link href='#habilidades'>Tecnologias</Link>    
-                
                 </div>
             </nav>
         </header>

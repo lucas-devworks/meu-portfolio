@@ -28,7 +28,6 @@
     background-size: cover;
     background-repeat: no-repeat;
     border-radius: 50% 50%;
-    background-color: aqua;
     border: solid 5px red;
 }
 
@@ -63,22 +62,24 @@
     gap: 10px;
 }
 .box_link {
-    width: 40%;
+    width: 120px;
     display: flex;
     align-items: center;
     justify-content: center;
     gap: 10px;
 }
 .box_link a {
-    font-size: 50px;
+    font-size: 30px;
     color: white;
     display: flex;
     justify-content: center;
     text-shadow: 1px 1px 1px red;
+    border-bottom:solid 2px red;
+    border-radius: -10px;
 }
 
 /* efeito hover links */
-.links_container a:hover {
+.links_container a:hover, .box_link a:hover {
     color: rgb(231, 7, 7);
 }
 
@@ -106,6 +107,36 @@
 
 /* ///// MEDIA QUERIES ///// */
 
+@media (max-width: 340px) { /* smartphone pequeno */
+    .box_link {
+        flex-direction: row !important;
+        height: auto;
+        width: 130px;
+    }
+ 
+    .container {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .botao {
+        flex-direction: column;
+        width: 100%;
+        height: 95%;
+    }
+    .botao a {
+        font-size: 15px !important;
+        width: 80%;
+        text-align: center;
+    }
+
+    .links_container {
+        padding: 5px;
+    }
+
+}
+
+
 @media (max-width: 767px) { /* smartphone */
     .texto h1 {
         font-size: 27px;
@@ -125,6 +156,10 @@
         width: 100%;
     } .botao a {
         font-size: 18px;
+    }
+    .box_link {
+        flex-direction: column;
+        width: 20px;
     }
 }
 
