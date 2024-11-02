@@ -45,7 +45,6 @@ const [clicado, setClicado] = useState(false);
             nome={'PROJETO - SORTEADOR NUMÉRICO'}
             imagem={pro2}
             link_projeto={'https://sorteador-numerico-editavel.vercel.app/'}
-            
             github={'https://github.com/lucas-devworks/SORTEADOR_NUMERICO_EDITAVEL.git'}
           />
 
@@ -58,9 +57,9 @@ const [clicado, setClicado] = useState(false);
           />
 
      {/* projeto 4 */}
-     <Projetos
+          <Projetos
             nome={'PÁGINA WEB - ÓTICAS VIDA'}
-            imagem={pro3}
+            imagem={pro4}
             link_projeto={'https://website-otica.vercel.app/'}
             github={'https://github.com/lucas-devworks/website-otica.git'}
           />
