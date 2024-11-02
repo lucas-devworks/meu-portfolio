@@ -1,3 +1,4 @@
+ "use client";
 // estilos
 import Link from 'next/link';
 import estilos from './SobreMim.module.css';
