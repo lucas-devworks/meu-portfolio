@@ -6,18 +6,19 @@ import Topo from "@/componentes/Topo";
 import Projetos from "@/componentes/Projetos";
 import SobreMim from "./sobreMim/page";
 import Habilidades from "./habilidades/page";
-// imagens do projeto
-import pro1 from '@/../public/projetos/projeto1.png';
-import pro2 from '@/../public/projetos/projeto2.png';
-import pro3 from '@/../public/projetos/projeto3.png';
-import pro4 from '@/../public/projetos/projeto4.png';
-import pro5 from '@/../public/projetos/projeto5.png';
-import pro6 from '@/../public/projetos/projeto6.png';
-import pro7 from '@/../public/projetos/projeto7.png';
 import Link from "next/link";
 
 
 export default function Home() {
+// imagens
+const pro1 = "/projetos/projeto1.png";
+const pro2 = "/projetos/projeto2.png";
+const pro3 = "/projetos/projeto3.png";
+const pro4 = "/projetos/projeto4.png";
+const pro5 = "/projetos/projeto5.png";
+const pro6 = "/projetos/projeto6.png";
+const pro7 = "/projetos/projeto7.png";
+
 
 // variavél de estado
 const [clicado, setClicado] = useState(false);
@@ -34,56 +35,57 @@ const [clicado, setClicado] = useState(false);
      {/* projeto 1 */}
             <Projetos
             nome={'PÁGINA WEB - FORMULÁRIO'}
-            link_projeto={'https://formulario-agencia-viagens.vercel.app/'}
             imagem={pro1}
+            link_projeto={'https://formulario-agencia-viagens.vercel.app/'}
             github={'https://github.com/lucas-devworks/FORMULARIO-AGENCIA-VIAGENS.git'}
           />
 
-          {/* projeto 2 */}
-          <Projetos
+                   {/* projeto 2 */}
+            <Projetos
             nome={'PROJETO - SORTEADOR NUMÉRICO'}
-            link_projeto={'https://sorteador-numerico-editavel.vercel.app/'}
             imagem={pro2}
+            link_projeto={'https://sorteador-numerico-editavel.vercel.app/'}
+            
             github={'https://github.com/lucas-devworks/SORTEADOR_NUMERICO_EDITAVEL.git'}
           />
 
           {/* projeto 3 */}
           <Projetos
             nome={'PROJETO - SORTEADOR DE NOMES'}
-            link_projeto={'https://projeto-sorteio-nomes.vercel.app/'}
             imagem={pro3}
+            link_projeto={'https://projeto-sorteio-nomes.vercel.app/'}
             github={'https://github.com/lucas-devworks/PROJETO_SORTEIO_NOMES.git'}
           />
 
      {/* projeto 4 */}
      <Projetos
             nome={'PÁGINA WEB - ÓTICAS VIDA'}
+            imagem={pro3}
             link_projeto={'https://website-otica.vercel.app/'}
-            imagem={pro4}
             github={'https://github.com/lucas-devworks/website-otica.git'}
           />
 
           {/* projeto 5 */}
           <Projetos
             nome={'PÁGINA WEB - SORVETERIA'}
-            link_projeto={'https://sorveteria-web.vercel.app/'}
             imagem={pro5}
+            link_projeto={'https://sorveteria-web.vercel.app/'}
             github={'https://github.com/lucas-devworks/pagina-sorveteria.git'}
           />
 
           {/* projeto 6 */}
           <Projetos
             nome={'PÁGINA WEB - DARKMODE'}
-            link_projeto={'https://web-dark-topaz.vercel.app/'}
             imagem={pro6}
+            link_projeto={'https://web-dark-topaz.vercel.app/'}
             github={'https://github.com/lucas-devworks/web-dark-page.git'}
           />
 
           {/* projeto 7 */}
           <Projetos
             nome={'PROJETO - CARDÁPIO DINÂMICO'}
-            link_projeto={'https://cardapioreact.vercel.app/'}
             imagem={pro7}
+            link_projeto={'https://cardapioreact.vercel.app/'}
             github={'https://github.com/lucas-devworks/cardapio_dinamico.git'}
           />
 

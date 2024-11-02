@@ -12,7 +12,7 @@ export default function Projetos (props) {
                 <figure>
                     <figcaption>{props.nome}</figcaption>
                         <Link target='_blank' href={props.link_projeto}>
-                            <Image src={props.imagem} alt='projeto'/>
+                            <img src={props.imagem} alt='projeto'/>
                         </Link>
                 </figure>
 
