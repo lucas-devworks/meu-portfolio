@@ -70,6 +70,12 @@
     color: #d60707;
 }
 
+@media (max-width: 340px) { /* smartphone pequeno */
+    .secao_topo {
+        height: 100vh;
+    }
+}
+
 @media (max-width: 767px) { /* smartphone */
     .secao_topo { /*topo*/
         height: 90vh;

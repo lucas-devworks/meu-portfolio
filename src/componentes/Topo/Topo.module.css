@@ -112,30 +112,21 @@
         flex-direction: row !important;
         height: auto;
         width: 130px;
+        position: absolute;
+        top: 10px;
     }
- 
     .container {
         flex-direction: column;
         gap: 10px;
     }
-
-    .botao {
-        flex-direction: column;
-        width: 100%;
-        height: 95%;
-    }
-    .botao a {
-        font-size: 15px !important;
-        width: 80%;
-        text-align: center;
-    }
-
+    
     .links_container {
         padding: 5px;
     }
-
+    .texto h1, .texto h2 {
+        font-size: 13px;
+    }
 }
-
 
 @media (max-width: 767px) { /* smartphone */
     .texto h1 {
@@ -153,10 +144,16 @@
     }
 
     .botao {
+        flex-direction: column;
         width: 100%;
-    } .botao a {
-        font-size: 18px;
+        height: 95%;
     }
+    .botao a {
+        font-size: 15px !important;
+        width: 80%;
+        text-align: center;
+    }
+
     .box_link {
         flex-direction: column;
         width: 20px;
