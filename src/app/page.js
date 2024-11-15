@@ -18,6 +18,7 @@ const pro4 = "/projetos/projeto4.png";
 const pro5 = "/projetos/projeto5.png";
 const pro6 = "/projetos/projeto6.png";
 const pro7 = "/projetos/projeto7.png";
+const pro8 = "/projetos/projeto8.png";
 
 
 // variavél de estado
@@ -86,6 +87,13 @@ const [clicado, setClicado] = useState(false);
             imagem={pro7}
             link_projeto={'https://cardapioreact.vercel.app/'}
             github={'https://github.com/lucas-devworks/cardapio_dinamico.git'}
+          />
+          {/* projeto 8 */}
+          <Projetos
+            nome={'PROJETO - FERIADOS 2025'}
+            imagem={pro8}
+            link_projeto={'https://feriados-nacionais-projeto.vercel.app/'}
+            github={'https://github.com/lucas-devworks/FERIADOS_NACIONAIS_PROJETO.git'}
           />
 
       </section>

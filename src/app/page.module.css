@@ -31,8 +31,8 @@
     justify-content: center;
     align-items: start;
     gap: 30px;
-    flex-wrap: wrap;
-    flex-direction: row;
+    flex-wrap: wrap-reverse;
+    flex-direction: row-reverse;
 }
 
 /* sobre mim */
