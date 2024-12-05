@@ -1,5 +1,6 @@
 import estilos from './Habilidades.module.css';
 import { CardHabilidades } from '@/componentes/CardHabilidades';
+import Image from 'next/image';
 //icones
 import { FaHtml5 } from "react-icons/fa"; // html
 import { IoLogoCss3 } from "react-icons/io5"; // css
@@ -9,6 +10,7 @@ import { TbApi } from "react-icons/tb"; // api rest
 import { PiFileSql } from "react-icons/pi"; // sql
 import { GrMysql } from "react-icons/gr"; // mysql
 import { FaNodeJs } from "react-icons/fa"; // node.js
+// import src from 'debug';
 
 
 export default function Habilidades() {
@@ -18,6 +20,7 @@ export default function Habilidades() {
         <div className={estilos.titulo}>
                 <h2>Tecnologias</h2>
                 <small>Habilidades</small>
+                
         </div>
 
         <div className={estilos.cards}>
@@ -29,6 +32,7 @@ export default function Habilidades() {
             <CardHabilidades nome={'SQL'} icone={<PiFileSql />}/>
             <CardHabilidades nome={'MySQL'} icone={<GrMysql />}/>
             <CardHabilidades nome={'Node.js'} icone={<FaNodeJs />}/>
+            <CardHabilidades nome={'C'} icone={ (<Image width="73" height="73" src={'/c.png'}  alt="a"/>)}/>
         </div>
     </section>
 

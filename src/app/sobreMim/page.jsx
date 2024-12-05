@@ -39,7 +39,7 @@ export default function SobreMim(props) {
                     </p>
                     {/* botão para download CV */}
                     <div className={estilos.container_cv}>
-                        <a href='/documentos/LUCAS TEIXEIRA SANTOS - CURRÍCULO.pdf' download> {/* donwload do currículo */}
+                        <a href='/documentos/Lucas Teixeira Santos - CV.pdf' download> {/* donwload do currículo */}
                             <button
                              onClick={alterarState}  /* capturando click */
                              className={botaoClicado ? estilos.botao_verde : undefined} // if ternário  (troca a cor do botão)

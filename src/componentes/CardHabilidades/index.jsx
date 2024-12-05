@@ -1,4 +1,5 @@
 import estilos from './CardHabilidades.module.css';
+import Image from 'next/image';
 
 
 export function CardHabilidades (props) {
